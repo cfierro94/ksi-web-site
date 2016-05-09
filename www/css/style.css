@@ -9,11 +9,7 @@ Primary style
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
+header {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
   color: #33414a;
@@ -23,6 +19,15 @@ body {
 a {
   color: #7e4d7e;
   text-decoration: none;
+}
+
+.section-title{
+  margin-bottom: 5%;
+  border-bottom: 1px solid #BDBDBD;
+  color: #095369;
+  line-height: 36px;
+  font-size: 24px;
+  letter-spacing: -0.02em;
 }
 
 /* -------------------------------- 
@@ -63,6 +68,9 @@ header::before {
   /* never visible - this is used in jQuery to check the current MQ */
   display: none;
   content: 'mobile';
+}
+.selected{
+  color: #75BCCC !important;
 }
 @media only screen and (min-width: 768px) {
   header {
@@ -120,8 +128,11 @@ header::before {
   width: 100%;
   top: 60px;
   left: 0;
-}
 
+  -webkit-box-shadow: 0 6px 20px -6px dimgrey;
+     -moz-box-shadow: 0 6px 20px -6px dimgrey;
+          box-shadow: 0 6px 20px -6px dimgrey;
+}
 @media only screen and (min-width: 768px){
   .div-white{
     height: 50px;
@@ -228,7 +239,7 @@ header::before {
 }
 .cd-main-nav a {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding: .9em 2em .9em 1em;
   margin: 0 3%;
   border-bottom: 1px solid #75BDCC;
@@ -351,7 +362,7 @@ header::before {
     display: inline-block;
     padding: .8em;
     line-height: 1;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     border-bottom: none;
     /* Prevent .cd-subnav-trigger flicker is Safari */
     -webkit-transform: translateZ(0);
@@ -593,4 +604,19 @@ header::before {
   .no-js .cd-main-content {
     padding-top: 80px;
   }
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+
+footer.page-footer{
+  background-color: #095369;
+}
+
+footer.page-footer .footer-copyright{
+  background-color: rgb(4, 71, 90);
 }
