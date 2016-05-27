@@ -138,7 +138,6 @@ Présentation page
 
 .card-president-content h5{
   color: #355BA6;
-  padding-top: 0.8em;
   padding-left: 1em;
 }
 
@@ -149,10 +148,20 @@ Présentation page
 }
 
 @media only screen and (min-width: 601px) {
+  .card-president{
+    padding: 1em !important;
+    display: flex;
+  }
   .card-president-header{
-    padding-top: 1em !important;
-    padding-left: 1em !important;
-    
+    border-radius: 8px;
+    max-width: 27vw;
+    align-self: center;
+  }
+  .card-president-content{
+    max-width: 70vw;
+  }
+  .card-president-header img{
+    float: left;
   }
 }
 
