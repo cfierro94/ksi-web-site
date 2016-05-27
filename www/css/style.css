@@ -21,6 +21,36 @@ a {
   text-decoration: none;
 }
 
+/* -------------------------------- 
+Slider
+-------------------------------- */
+
+.slider{
+  margin-top: 37px; /* 37 div white */
+}
+.slider .indicators .indicator-item {
+  background-color: #DEDDDD;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #095369;
+}
+.slider .indicators {
+  z-index: 100;
+}
+@media only screen and (min-width: 768px){
+  .slider{
+    margin-top: 50px; /* 50 div white */
+  }
+}
+
+/* -------------------------------- 
+Section
+-------------------------------- */
+
 .section{
   padding-bottom: 2rem;
 }
@@ -46,8 +76,22 @@ a {
 }
 
 /* -------------------------------- 
+Accueil page
+-------------------------------- */
 
-Main Components 
+.chiffres h1{
+  font-size: 280%;
+}
+
+.chiffres h6 {
+  font-size: 98%;
+  font-weight: 300;
+}
+
+
+/* -------------------------------- 
+
+Main Components --> Nav
 
 -------------------------------- */
 header {
@@ -238,6 +282,7 @@ header::before {
 }
 
 .cd-main-nav {
+  margin: 0;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -358,6 +403,7 @@ header::before {
 }
 @media only screen and (min-width: 768px) {
   .cd-main-nav {
+    margin-top: 0.5em;
     position: static;
     visibility: visible;
     width: 100%;
