@@ -30,6 +30,7 @@ My card
 .my-card {
   background-color: #fafafa;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  margin-bottom: 1em;
 }
 .image-card-header {
   overflow: hidden;
@@ -173,6 +174,28 @@ Accueil page
   .histoire p{
     padding: 0em;
   }
+}
+
+.event{
+  display: flex;
+}
+.events .card-panel{
+  background-color: #74BCCB !important;
+}
+.event div{
+  margin: 0.3em;
+}
+.date{
+  margin-right: 0.2em;
+}
+.date h6{
+  color: white;
+  font-size: larger;
+}
+.event-description h6{
+  color: #3C4448;
+  line-height: 150%;
+  font-size: small;
 }
 
 .partenaires{
