@@ -58,5 +58,11 @@ jQuery(document).ready(function($){
 		e.preventDefault();
 		$(this).parent().toggleClass('q-open');
 	})
+    /*
+	//cards domain mobile
+    $('.flip-container').on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('hover');
+	})*/
 
 });
