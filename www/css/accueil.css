@@ -1,0 +1,97 @@
+/* -------------------------------- 
+Chiffres
+-------------------------------- */
+
+.chiffres h1{
+  font-size: 280%;
+}
+
+.chiffres h6 {
+  font-size: 98%;
+  font-weight: 300;
+}
+
+/* -------------------------------- 
+Histoire
+-------------------------------- */
+
+.histoire{
+  padding: 1.5em;
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.histoire-img{
+  align-self: center;
+}
+.histoire img{
+  max-height: 25vh;
+}
+.histoire-content{
+  max-width: 500px;  
+}
+.histoire p{
+  padding: 0.9em;
+  text-align: justify;
+}
+@media only screen and (min-width: 601px) {
+  .histoire p{
+    padding: 0em;
+  }
+}
+
+/* cards events */
+.event{
+  display: flex;
+}
+.events .card-panel{
+  background-color: #74BCCB !important;
+}
+.event div{
+  margin: 0.3em;
+}
+.date{
+  margin-right: 0.2em;
+}
+.date h6{
+  color: white;
+  font-size: larger;
+}
+.event-description h6{
+  color: #3C4448;
+  line-height: 150%;
+  font-size: small;
+}
+
+/* -------------------------------- 
+Partenaires
+-------------------------------- */
+
+.partenaires{
+  display: flex;
+  height: 50vh;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.partenaires div{
+  margin: 1.5em;
+}
+.partenaires img{
+  max-width: 75vw;
+}
+.partenaires #too-big{
+  max-height: 28vh;
+  width: auto;
+}
+@media only screen and (min-width: 601px) {
+  .partenaires{
+    height: 22vh;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .partenaires img,
+  .partenaires #too-big{
+    max-height: 15vh;
+    width: auto;
+  }
+}

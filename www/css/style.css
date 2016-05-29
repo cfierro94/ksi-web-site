@@ -138,94 +138,6 @@ Section
   background-color: #fff;
 }
 
-/* -------------------------------- 
-Accueil page
--------------------------------- */
-
-.chiffres h1{
-  font-size: 280%;
-}
-
-.chiffres h6 {
-  font-size: 98%;
-  font-weight: 300;
-}
-
-.histoire{
-  padding: 1.5em;
-  display: flex; 
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.histoire-img{
-  align-self: center;
-}
-.histoire img{
-  max-height: 25vh;
-}
-.histoire-content{
-  max-width: 500px;  
-}
-.histoire p{
-  padding: 0.9em;
-  text-align: justify;
-}
-@media only screen and (min-width: 601px) {
-  .histoire p{
-    padding: 0em;
-  }
-}
-
-.event{
-  display: flex;
-}
-.events .card-panel{
-  background-color: #74BCCB !important;
-}
-.event div{
-  margin: 0.3em;
-}
-.date{
-  margin-right: 0.2em;
-}
-.date h6{
-  color: white;
-  font-size: larger;
-}
-.event-description h6{
-  color: #3C4448;
-  line-height: 150%;
-  font-size: small;
-}
-
-.partenaires{
-  display: flex;
-  height: 50vh;
-  flex-wrap: wrap;
-  overflow-y: scroll;
-}
-.partenaires div{
-  margin: 1.5em;
-}
-.partenaires img{
-  max-width: 80vw;
-}
-.partenaires #too-big{
-  max-height: 30vh;
-  width: auto;
-}
-@media only screen and (min-width: 601px) {
-  .partenaires{
-    height: 20vh;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-  }
-  .partenaires img,
-  .partenaires #too-big{
-    max-height: 15vh;
-    width: auto;
-  }
-}
 
 /* -------------------------------- 
 Présentation page
@@ -234,6 +146,109 @@ Présentation page
 #title-slide-page2{
   margin-top: 220px;
 }
+
+.metho .my-card{
+  padding: 2em;
+  padding-left: 2.5em;
+}
+.phase{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.number{
+  margin-right: 1.5em;
+  color:white;
+  background-color: #314A8F;
+  border-radius: 100%;
+  padding: 0.3em 0.7em;
+}
+.phase-name{
+  flex: 0 1 75%;
+  margin: 0.8em;
+  margin-left: 0;
+}
+.phase-name h5{
+  font-size: 1.2em;
+}
+.phase a{
+  color: rgba(0,0,0,0.87); 
+  border-bottom: 2px solid #75BDCC;  
+}
+@media only screen and (min-width: 601px){
+  .phase a{
+    border-bottom: 2px solid transparent;
+    transition: 0.6s ease; 
+  }
+  .phase a:hover{
+    border-bottom: 2px solid #75BDCC;
+  }
+}
+.description-metho{
+  flex: 0 1 100%;
+  background-color: #75BDCC;
+  border-radius: 10px;
+}
+.description-metho p{
+  margin: 0;
+  text-align: justify;
+}
+.q-open h5{
+  color: #355BA6;
+  transition: color 0.5s;
+}
+/* transition over height */
+.description-metho{
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+  padding: 0;
+  transition: padding 0.2s;
+}
+.q-open .description-metho{
+  max-height: 350px;
+  overflow-y: scroll;
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  transition: max-height 1s;
+  transition: padding 0.5s;
+}
+@media only screen and (min-width: 601px){
+  .q-open .description-metho{
+    max-height: 500px;
+    overflow: hidden;
+  }
+}
+/* transition over padding */
+.description-metho{
+  padding: 0;
+  -webkit-transition: padding 0.2s;
+  -moz-transition: padding 0.2s;
+  transition: padding 0.2s;
+}
+.q-open .description-metho{
+  padding: 2em 2.5em; 
+  -webkit-transition: padding 0.5s;
+  -moz-transition: padding 0.5s;
+  transition: padding 0.5s;
+}
+/* transition over p color */
+.description-metho p{
+  color: #75BDCC;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.q-open .description-metho p{
+  color: #3C4448;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
 
 /* -------------------------------- 
 

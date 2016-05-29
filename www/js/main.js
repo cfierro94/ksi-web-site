@@ -46,20 +46,17 @@ jQuery(document).ready(function($){
 		return ( mq == 'mobile' ) ? false : true;
 	}
 
-	jQuery.fn.scrollTo = function(elem, speed) { 
-	    $(this).animate({
-	        scrollTop:  $(this).scrollTop() - $(this).offset().top + $(elem).offset().top 
-	    }, speed == undefined ? 1000 : speed); 
-    	return this; 
-	};
-
-	$(".partenaires").scrollTop(20);
-
 	$(document).ready(function(){
 	  $('.slider').slider();
 	});
 	$(document).ready(function(){
       $('.parallax').parallax();
     });
+
+	//methodology description
+    $('.phase .q-toggle').on('click', function(e){
+		e.preventDefault();
+		$(this).parent().toggleClass('q-open');
+	})
 
 });
