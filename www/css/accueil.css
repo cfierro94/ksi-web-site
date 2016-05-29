@@ -68,6 +68,7 @@ Partenaires
 -------------------------------- */
 
 .partenaires{
+  background-color: #fafafa;
   display: flex;
   height: 50vh;
   flex-wrap: wrap;
@@ -88,6 +89,7 @@ Partenaires
     height: 22vh;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    overflow-y: hidden;
   }
   .partenaires img,
   .partenaires #too-big{

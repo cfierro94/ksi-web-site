@@ -29,8 +29,11 @@ My card
 
 .my-card {
   background-color: #fafafa;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   margin-bottom: 1em;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  
 }
 .image-card-header {
   overflow: hidden;
@@ -156,6 +159,7 @@ Présentation page
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0.8em 0;
 }
 .number{
   margin-right: 1.5em;
@@ -173,6 +177,7 @@ Présentation page
   font-size: 1.2em;
 }
 .phase a{
+  margin-bottom: 0.5em;
   color: rgba(0,0,0,0.87); 
   border-bottom: 2px solid #75BDCC;  
 }
@@ -308,6 +313,7 @@ header::before {
   }
 }
 
+/* Logo */
 .cd-logo {
   display: inline-block;
   height: 100%;
@@ -340,6 +346,7 @@ header::before {
   }
 }
 
+/* white part */
 .div-white{
   background-color: white;
   z-index: -1;
@@ -359,7 +366,42 @@ header::before {
     top: 80px;
   }
 }
-
+#download{
+  position: fixed;
+  height: 43px;
+  width: 15vw;
+  min-width: 96px;
+  top: 9px;
+  right: 50px;
+  background-color: white;
+  border: solid 2px #1282A4;
+  border-radius: 5px;
+  display: table;
+}
+#download > div{
+  display: table-cell;
+  vertical-align: middle;
+}
+#download p{
+  color: #095369;
+  text-align: center;
+  margin: 0;
+  font-size: 0.55em;
+  line-height: 120%;
+}
+@media only screen and (min-width: 768px){
+  #download{
+    height: 43px;
+    top: 83px;
+    right: 6vw;
+    max-width: 120px;
+    background-color: #1282A4;
+    border: solid 2px #095369;
+  }
+  #download p{
+    color: white;
+  }
+}
 .cd-nav-trigger {
   display: block;
   position: absolute;
