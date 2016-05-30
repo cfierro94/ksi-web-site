@@ -62,19 +62,20 @@ Histoire
   line-height: 150%;
   font-size: small;
 }
-
+.staggered-test{
+  opacity: 0;
+}
 /* -------------------------------- 
 Partenaires
 -------------------------------- */
 
 .partenaires{
-  background-color: #fafafa;
   display: flex;
   height: 50vh;
   flex-wrap: wrap;
   overflow-y: scroll;
 }
-.partenaires div{
+.partenaires > div{
   margin: 1.5em;
 }
 .partenaires img{

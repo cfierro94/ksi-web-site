@@ -49,6 +49,13 @@ jQuery(document).ready(function($){
 	$(document).ready(function(){
 	  $('.slider').slider();
 	});
+	var options = [
+	    {selector: '#staggered-test', offset: 300, callback: function() {
+	      Materialize.showStaggeredList("#staggered-test");
+	    } }
+  	];
+  	Materialize.scrollFire(options);
+
 	$(document).ready(function(){
       $('.parallax').parallax();
     });
