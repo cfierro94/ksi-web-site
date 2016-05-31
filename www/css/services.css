@@ -1,0 +1,111 @@
+/* -------------------------------- 
+
+Services page
+
+-------------------------------- */
+.domaines{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.domaines .image-card-header{
+  margin: 0;
+  height: 30vh;
+}
+.domaines .image-card-content{
+  height: 16vh;
+  margin: 0;
+  margin-left: 1em;
+}
+.domaines .my-card h5{
+  font-size: 1.4em;
+}
+
+/* flipper */
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+
+  margin: 0.5em;
+}
+
+.flip-container:hover .flipper,  
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flip-container ,.front, .back {
+  height: 46vh;
+  width: 100%;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+
+  background: #f8f8f8;
+}
+
+@media only screen and (min-width: 601px) {
+  .flip-container{
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  /* .domaines .image-card-header, */
+  .flip-container{
+    width: 31%;
+  }
+}
+
+.domaines .back{
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  padding: 1.5em 2em;
+  line-height: 200%;
+  overflow-y: scroll;
+}
+.domaines .back h5{
+  color: #355BA6;
+}

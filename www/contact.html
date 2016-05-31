@@ -14,7 +14,6 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="css/accueil.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
 	<title>KSI Central Marseille</title>
@@ -27,18 +26,13 @@
 			<ul class="cd-main-nav">
 				<li><a href="index.html">Accueil</a></li>
 				<li><a href="presentation.html">Présentation</a></li>
-				<li><a href="#0">Nos Services</a></li>
+				<li><a href="services.html">Nos Services</a></li>
 				<li><a href="contact.html" class="selected">Nous Contacter</a></li>
 			</ul> 
 		</div> <!-- .cd-main-nav-wrapper -->
 		
 		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
-		<div class="div-white">
-			<a href="files/Plaquette-2016.pdf" target="_blank">
-			<div id="download">
-				<div><p>Télécharger La Plaquette</p></div>
-			</div></a>
-		</div>
+		<div class="div-white"></div>
 	</header>
 	
 	<main class="cd-main-content">
@@ -56,76 +50,107 @@
 	</div>
 
 	<div class="container">
-		<div class="row">
-		    <h2 class="section-title">Formulaire de contact</h2>
-		    <form class="col s12">
-			   	 <div class="row">
-					
-					<div class="input-field col s6">
-						<select class="browser-default">
-						<option value="" disabled selected>Titre</option>
-						<option value="1">Mme</option>
-						<option value="2">Mlle</option>
-						<option value="3">M</option>
-						</select>
-					</div>
-				  </div>
-			      <div class="row">
-			        <div class="input-field col s12 m6 offset">
-			          <i class="material-icons prefix">account_circle</i>
-			          <input id="first_name" type="text" class="validate">
-			          <label for="first_name">First Name</label>
-			        </div>
-			        <div class="input-field col s12 m6">
-			          <input id="last_name" type="text" class="validate">
-			          <label for="last_name">Last Name</label>
-			        </div>
-			      </div>
+		<div class="section">
+		<div class="my-card" style="padding: 1em 2em;">
+			<h2 class="section-title">Formulaire de contact</h2>
+			<div class="row contact">
+			    <form action="http://localhost/phpinfo.php" method="post" >
+				   	 <div class="row">
+						
+						<div class="input-field col s6">
+							<select class="browser-default">
+							<option value="" disabled selected>Titre</option>
+							<option value="1">Mme</option>
+							<option value="2">Mlle</option>
+							<option value="3">M</option>
+							</select>
+						</div>
+					  </div>
+				      <div class="row">
+				        <div class="input-field col s12 m6 offset">
+					          <i class="material-icons prefix">account_circle</i>
+					          <input id="first_name" name="nom" type="text" class="validate">
+					          <label for="first_name">Nom</label>
+				        </div>
+				        <div class="input-field col s12 m6">
+				        	<i class="material-icons prefix">account_circle</i>
+				          	<input id="last_name" name="prenom" type="text" class="validate">
+				          	<label for="last_name">Prenom</label>
+				        </div>
+				      </div>
 
-			      <div class="row">
-			        <div class="input-field col s12 m6 offset">
-			          <i class="material-icons prefix">phone</i>
-			          <input id="first_name" type="text" class="validate">
-			          <label for="first_name">Portable</label>
-			        </div>
-			        <div class="input-field col s12 m6 ">
-			          <i class="material-icons prefix">email</i>
-			          <input id="last_name" type="text" class="validate">
-			          <label for="last_name">Email</label>
-			        </div>
-			      </div>
-			   
-							
-							<div class="row">
-								<div class="input-field col s6">
-								<i class="material-icons prefix">business</i>
-								<input id="icon_prefix" type="text" class="validate">
-								<label for="icon_prefix">Entreprise</label>
+				      <div class="row">
+				        <div class="input-field col s12 m6 offset">
+				          <i class="material-icons prefix">phone</i>
+				          <input id="phone" name="phone" type="text" class="validate">
+				          <label for="phone">Téléphone</label>
+				        </div>
+				        <div class="input-field col s12 m6 ">
+				          <i class="material-icons prefix">email</i>
+				          <input id="email" name="email" type="text" class="validate">
+				          <label for="email">Mail</label>
+				        </div>
+				      </div>		
+						
+						<div class="row">
+							<div class="input-field col s12 m6">
+							<i class="material-icons prefix">business</i>
+							<input id="enterprise" name="enterprise" type="text" class="validate">
+							<label for="enterprise">Entreprise</label>
 							</div>
-							</div>
+						</div>
 
-							<div class="row">
-								<div class="input-field col s6">
-								<input id="icon_prefix" type="text" class="validate">
-								<label for="icon_prefix">Objet</label>
-								</div>
+						<div class="row">
+							<div class="input-field col s12 m6">
+							<i class="material-icons prefix">turned_in</i>
+							<input id="Object" name="objet" type="text" class="validate">
+							<label for="Object">Objet</label>
 							</div>
-
-				      	
-				      		<div class="row">
+						</div>
+					  
+			      		<div class="row">
 		      				<div class="input-field col s12">
-		          				<textarea id="textarea1" class="materialize-textarea"></textarea>
-		          				<label for="textarea1">Message</label>
+		      					<i class="material-icons prefix">mode_edit</i>
+		          				<textarea id="Mensaje" name="message" class="materialize-textarea"></textarea>
+		          				<label for="Mensaje">Votre message</label>
 		       		 		</div>
+	      				</div>
+
+	      				<div class="row">
+		      				<div class="center-btn">
+		      					<button class="btn waves-effect waves-light" type="submit" name="action" >Submit
+		    					<i class="material-icons right">send</i>
+		  						</button>
 		      				</div>
-		    </form>
+		      			</div>
+			    </form>
+			</div>
+		</div>
 		</div>
 	</div>
+	
+	<footer class="page-footer">
+      <div class="footer-copyright">
+		<div class="container">
+		© 2016 KSI Centrale Marseille - Tous droits réservés
+			<div class="social">
+				<ul>
+					<li>
+			        	<a href="mailto:thibault.lecailtel@centrale-marseille.fr"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/thibaultlecailtel" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					</li>
+			    </ul>
+			</div>
+		</div>
+      </div>
+	</footer>
+	
 	</main>
 
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
 	<script type="text/javascript" src="js/materialize.min.js"></script> <!-- Materialize -->
-
 </body>
 </html>
