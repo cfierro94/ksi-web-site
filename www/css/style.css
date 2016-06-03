@@ -775,6 +775,7 @@ Footer
 }
 .social ul li i:hover{
   color: #75BDCC;
+  transition: color 0.4s ease;
 }
 footer.page-footer{
   margin: 0;
