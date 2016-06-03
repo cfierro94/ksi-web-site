@@ -87,10 +87,9 @@ Partenaires
 }
 @media only screen and (min-width: 601px) {
   .partenaires{
-    height: 22vh;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .partenaires img,
   .partenaires #too-big{
