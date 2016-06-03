@@ -50,6 +50,9 @@ jQuery(document).ready(function($){
 	  $('.slider').slider();
 	});
 	var options = [
+		{selector: '#metho-list', offset: 20, callback: function() {
+	      Materialize.showStaggeredList("#metho-list");
+	    } },
 	    {selector: '.image-test', offset: 50, callback: function() {
 	      Materialize.fadeInImage(".image-test");
 	    } }
