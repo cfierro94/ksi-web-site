@@ -23,8 +23,6 @@ a {
   margin-bottom: 5em;
 }
 
-
-
 /* -------------------------------- 
 Slider
 -------------------------------- */
@@ -754,9 +752,12 @@ Footer
 #download-button{
   background-color: #75BCCC;
 }
-.page-footer > .container{
+.page-footer .container{
   width: 80%;
   padding-top: 2em;
+}
+.footer-copyright .container{
+  padding-top: 0;
 }
 .page-footer .col{
   margin-bottom: 3em;
