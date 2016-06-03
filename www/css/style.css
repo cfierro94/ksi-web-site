@@ -24,6 +24,7 @@ footer ul li i {
   color: white;
 }
 
+
 /* -------------------------------- 
 Slider
 -------------------------------- */
@@ -750,23 +751,35 @@ header::before {
 Footer
 
 -------------------------------- */
-
+#download-button{
+  background-color: #75BCCC;
+}
+.page-footer > .container{
+  padding-top: 2em;
+}
+.page-footer h5{
+  
+}
 .social ul {
   padding: 0;
   width: 90%;
 }
 .social ul li{
   list-style: none;
-  margin: 5px;
+  margin: 1em 0;
 }
 .social ul li i {
   font-size: 1.5em;
+  margin-right: 0.8em;
   color: white;
 }
 footer.page-footer{
   margin: 0;
   padding: 0;
 }
+footer.page-footer{
+  background-color: #126E8A;
+}
 footer.page-footer .footer-copyright{
-  background-color: rgb(4, 71, 90);
+  background-color: #095369;
 }

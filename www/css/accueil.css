@@ -85,6 +85,9 @@ Partenaires
   max-height: 28vh;
   width: auto;
 }
+.image-test{
+  opacity: 0;
+}
 @media only screen and (min-width: 601px) {
   .partenaires{
     height: 100%;
@@ -96,4 +99,11 @@ Partenaires
     max-height: 15vh;
     width: auto;
   }
+}
+
+
+
+#download-button:hover{
+  background-color: #7ECBDC;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2),0 2px 10px 0 rgba(0,0,0,0.5);
 }

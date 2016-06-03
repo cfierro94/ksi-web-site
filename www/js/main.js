@@ -50,8 +50,8 @@ jQuery(document).ready(function($){
 	  $('.slider').slider();
 	});
 	var options = [
-	    {selector: '#staggered-test', offset: 300, callback: function() {
-	      Materialize.showStaggeredList("#staggered-test");
+	    {selector: '.image-test', offset: 50, callback: function() {
+	      Materialize.fadeInImage(".image-test");
 	    } }
   	];
   	Materialize.scrollFire(options);
