@@ -73,15 +73,16 @@ Partenaires
   display: flex;
   height: 50vh;
   flex-wrap: wrap;
+  justify-content: space-around;
   overflow-y: scroll;
 }
 .partenaires > div{
   margin: 1.5em;
 }
 .partenaires img{
-  max-width: 75vw;
+  max-width: 73vw;
 }
-.partenaires #too-big{
+.partenaires .too-big{
   max-height: 28vh;
   width: auto;
 }
@@ -95,9 +96,12 @@ Partenaires
     justify-content: space-around;
   }
   .partenaires img,
-  .partenaires #too-big{
+  .partenaires .too-big{
     max-height: 15vh;
     width: auto;
+  }
+  .partenaires .too-big{
+    max-height: 20vh;
   }
 }
 
