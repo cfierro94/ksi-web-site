@@ -758,7 +758,7 @@ Footer
   padding-top: 2em;
 }
 .page-footer h5{
-  
+
 }
 .social ul {
   padding: 0;
@@ -772,6 +772,9 @@ Footer
   font-size: 1.5em;
   margin-right: 0.8em;
   color: white;
+}
+.social ul li i:hover{
+  color: #75BDCC;
 }
 footer.page-footer{
   margin: 0;
