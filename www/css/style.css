@@ -19,10 +19,10 @@ a {
   text-decoration: none;
 }
 
-footer ul li i {
-  font-size: 1.5em;
-  color: white;
+.container{
+  margin-bottom: 5em;
 }
+
 
 
 /* -------------------------------- 
@@ -755,7 +755,11 @@ Footer
   background-color: #75BCCC;
 }
 .page-footer > .container{
+  width: 80%;
   padding-top: 2em;
+}
+.page-footer .col{
+  margin-bottom: 3em;
 }
 .social ul {
   padding: 0;
