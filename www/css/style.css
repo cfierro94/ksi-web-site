@@ -22,6 +22,9 @@ a {
 .container{
   margin-bottom: 5em;
 }
+.card-panel{
+  min-height: 6.6em;
+}
 
 /* -------------------------------- 
 Slider
@@ -112,6 +115,35 @@ My card
   padding: 0.8em;
   padding-top: 0;
   text-align: justify;
+}
+
+/* -------------------------------- 
+Card histoire
+-------------------------------- */
+
+.histoire{
+  padding: 1.5em;
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.histoire-img{
+  align-self: center;
+}
+.histoire img{
+  max-height: 25vh;
+}
+.histoire-content{
+  max-width: 500px;  
+}
+.histoire p{
+  padding: 0.9em;
+  text-align: justify;
+}
+@media only screen and (min-width: 601px) {
+  .histoire p{
+    padding: 0em;
+  }
 }
 
 /* -------------------------------- 
@@ -761,6 +793,10 @@ Footer
 }
 .page-footer .col{
   margin-bottom: 3em;
+}
+.page-footer p,
+.page-footer a{
+  font-weight: 300;
 }
 .social ul {
   padding: 0;

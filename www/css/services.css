@@ -72,7 +72,11 @@ Services page
 }
 
 .front {
-  z-index: 2;
+  z-index: 31;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .back {
@@ -108,4 +112,13 @@ Services page
 }
 .domaines .back h5{
   color: #355BA6;
+}
+
+
+/* notre ecole */
+.notre-ecole .histoire-img{
+  padding: 1em;
+}
+.notre-ecole img{
+  max-width: 30vh;
 }
