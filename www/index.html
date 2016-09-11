@@ -15,13 +15,13 @@
 
 	<link rel="stylesheet" href="css/style.css"> <!-- General resource style -->
 	<link rel="stylesheet" type="text/css" href="css/accueil.css"> <!-- Specific style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
   	
-	<title>KSI Central Marseille</title>
+	<title>KSI Centrale Marseille</title>
 	<link rel="icon" type="image/png" href="./images/logo_ksi.png">
 </head>
 <body>
-	<header>
+	<header class="nav-down">
 		<div class="cd-logo"><a href="#0"><img src="images/logo.png" alt="Logo"></a></div>
 
 		<div class="cd-main-nav-wrapper">
@@ -45,7 +45,7 @@
 		<div class="slider">
 			<ul class="slides">
 				<li>
-					<img src="images/slides/slide2.jpg"> 
+					<img src="images/slides/slides-accueil/slide2.jpg"> 
 					<div class="caption center-align">
 						<h3>Bienvenue</h3>
 						<h5 class="light grey-text text-lighten-3">Découvrez notre nouveau site</h5>
@@ -53,7 +53,7 @@
 				</li>
 
 				<li>
-					<img src="images/slides/CRA.jpg"> 
+					<img class="img-top" src="images/slides/slides-accueil/CRA.jpg"> 
 					<div class="caption left-align">
 						<h3>KSI Centrale Marseille</h3>
 						<h5 class="light grey-text text-lighten-3">Junior-Entreprise&reg;</h5>
@@ -61,7 +61,7 @@
 				</li>
 				
 				<li>
-					<img src="images/slides/CRP.jpg"> 
+					<img src="images/slides/slides-accueil/CRP.jpg"> 
 					<div class="caption right-align">
 						<h3>CRP MED</h3>
 						<h5 class="light grey-text text-lighten-3">2016</h5>
@@ -182,12 +182,14 @@
 				<div class="partenaires">
 					<div><img class="image-test too-big" src="images/partenaires/ey_logo_detail.png"></div>
 					<div><img class="image-test" src="images/partenaires/happy_crowfunding_bleu.jpg"></div>
+					<div><img class="image-test too-big" src="images/partenaires/nouveau_logo_CNJE.png"></div>
 					<div><img class="image-test" src="images/partenaires/foceenpetit.png"></div>
-					<div><img class="image-test" src="images/partenaires/CNJE_logo.png"></div>
 					<div><img class="image-test" src="images/partenaires/Logo Fablab avec Texte_2_opt_0.png"></div>
 					<div><img class="image-test too-big" src="images/partenaires/credit-agricole.jpg"></div>
 					<div><img class="image-test" src="images/partenaires/LOGO j5.jpg"></div>
+					<div><img class="image-test too-big" src="images/partenaires/JMC Aix Marseille.jpg"></div>
 					<div><img class="image-test" src="images/partenaires/Logo_Centrale_Marseille.svg.png"></div>
+					
 				</div>
 			</div>
 
@@ -202,7 +204,7 @@
 						<h5 class="header col s12 light">Envie de réaliser vos projets</h5>
 					</div>
 					<div class="row center">
-						<a href="mailto:ksi@centrale-marseille.fr" id="download-button" class="btn-large waves-effect waves-light">Contacter</a>
+						<a href="mailto:ksi@centrale-marseille.fr" id="download-button" class="btn-large waves-effect waves-light">Contactez nous</a>
 					</div>
 					<br><br>
 				</div>
@@ -245,10 +247,8 @@
         </footer>
 
 	</main>
-
-	<script src="js/jquery-2.1.1.js"></script>
-	<script src="js/main.js"></script> <!-- Resource jQuery -->
-	<script type="text/javascript" src="js/materialize.min.js"></script> <!-- Materialize -->
+	
+	<script type="text/javascript" src = "js/build/production.min.js"></script>
 
 </body>
 </html>

@@ -114,8 +114,22 @@ Services page
   color: #355BA6;
 }
 
+/* -------------------------------- 
+Ils nous ont fait confiance
+-------------------------------- */
 
-/* notre ecole */
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  max-height: 115px;
+}
+
+/* -------------------------------- 
+Notre ecole
+-------------------------------- */
 .notre-ecole .histoire-img{
   padding: 1em;
 }

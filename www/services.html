@@ -12,12 +12,15 @@
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<!--Carousel-->
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
 
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" type="text/css" href="css/services.css">
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
-	<title>KSI Central Marseille</title>
+	<title>KSI Centrale Marseille</title>
 	<link rel="icon" type="image/png" href="./images/logo_ksi.png">
 </head>
 <body>
@@ -45,25 +48,38 @@
 	<div class="slider">
 		<ul class="slides">
 			<li>
-				<img src="images/slides-services/services.jpg"> 
+				<img src="images/slides/slides-services/services.jpg"> 
 				<div class="caption right-align">
 					<h5>Centrale Marseille</h5>
 					<h4>Une école à la pointe de l'innovation</h4>
 				</div>
 			</li>
 			<li>
-				<img src="images/slides-services/experience.jpg"> 
+				<img src="images/slides/slides-services/experience.jpg"> 
 			</li>
 			<li>
-				<img src="images/slides-services/labo.jpg"> 
+				<img src="images/slides/slides-services/labo.jpg"> 
 			</li>
 			<li>
-				<img src="images/slides-services/robots.png"> 
+				<img src="images/slides/slides-services/robots.png"> 
 			</li>
 		</ul>
 	</div>
 
 	<div class="container">
+
+		<div class="section notre-ecole">
+			<h2 class="section-title">Notre école</h2>
+			<div class="my-card histoire">
+				<div class="histoire-img">
+					<a href="https://www.centrale-marseille.fr/"><img src="images/ecm.jpg"/></a>
+				</div>
+				<div class="histoire-content">
+					<p>La formation à Centrale Marseille est marquée par l'héritage des écoles dont elle est issue et par l’appartenance au groupe des Écoles centrales. L’organisation pédagogique est ainsi centrée sur la formation d’ingénieur centralien correspondant à un enseignement pluridisciplinaire ayant vocation à former des ingénieurs généralistes de forte culture scientifique et technique, leaders, prêts à agir sur une scène internationale et à relever les défis du XXIe siècle</p>
+				</div>
+			</div>
+		</div>
+
 		<div class="section">
 			<h2 class="section-title">Nos domaines de compétences</h2>
 			<div class="domaines">
@@ -172,20 +188,21 @@
 
 			</div>
 		</div>
-
-		<div class="section notre-ecole">
-			<h2 class="section-title">Notre école</h2>
-			<div class="my-card histoire">
-				<div class="histoire-img">
-					<a href="https://www.centrale-marseille.fr/"><img src="images/ecm.jpg"/></a>
-				</div>
-				<div class="histoire-content">
-					<p>La formation à Centrale Marseille est marquée par l'héritage des écoles dont elle est issue et par l’appartenance au groupe des Écoles centrales. L’organisation pédagogique est ainsi centrée sur la formation d’ingénieur centralien correspondant à un enseignement pluridisciplinaire ayant vocation à former des ingénieurs généralistes de forte culture scientifique et technique, leaders, prêts à agir sur une scène internationale et à relever les défis du XXIe siècle</p>
-				</div>
+		
+		<div class="section">
+			<h2 class="section-title">Ils nous ont fait confiance</h2>
+			<div id="owl-demo">
+			  <div class="item"><img src="images/enterprises/orange-logo.png" alt="Owl Image"></div>
+			  <div class="item"><img src="images/enterprises/marseille provence.jpg" alt="Owl Image"></div>
+			  <div class="item"><img src="images/enterprises/batignolles.jpg" alt="Owl Image"></div>
+			  <div class="item"><img src="images/enterprises/logo_cnrs.jpg" alt="Owl Image"></div>
+			  <div class="item"><img src="images/enterprises/descarga.jpeg" alt="Owl Image"></div>
+			  <div class="item"><img src="images/enterprises/edf-logo.jpeg" alt="Owl Image"></div>
+			  <div class="item"><img src="images/enterprises/logo_setec.png" alt="Owl Image"></div>
 			</div>
 		</div>
-	</div>
-            
+
+	</div>  
 
 	<footer class="page-footer">
       <div class="container">
@@ -222,8 +239,6 @@
     </footer>
 	</main>
 
-	<script src="js/jquery-2.1.1.js"></script>
-	<script src="js/main.js"></script> <!-- Resource jQuery -->
-	<script type="text/javascript" src="js/materialize.min.js"></script> <!-- Materialize -->
+	<script type="text/javascript" src = "js/build/production.min.js"></script>
 
 </body>

@@ -52,6 +52,10 @@ Slider
   }
 }
 
+.slider .slides li .img-top{
+    background-position: top;
+}
+
 /* -------------------------------- 
 Section
 -------------------------------- */
@@ -172,7 +176,14 @@ header {
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
+
+  transition: top 0.2s ease-in-out;
 }
+
+.nav-up {
+    top: -97px; /* 60 + 37 */
+}
+
 header.nav-is-visible {
   -webkit-transform: translateX(-260px);
   -moz-transform: translateX(-260px);
@@ -202,6 +213,10 @@ header::before {
   header::before {
     content: 'desktop';
   }
+
+  .nav-up {
+    top: -130px; /* 80 + 50 */
+}
 }
 
 /* Logo */
